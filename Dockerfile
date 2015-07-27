@@ -42,6 +42,14 @@ RUN \
     echo "yes" | sh jai_imageio-1_1-lib-linux-amd64-jdk.bin && \
     rm jai_imageio-1_1-lib-linux-amd64-jdk.bin
 
+# Install GDAL
+RUN wget -c http://demo.geo-solutions.it/share/github/imageio-ext/releases/1.1.X/1.1.12/native/gdal/gdal-data.zip -O ~/gdal-data.zip && \
+    unzip ~/gdal-data.zip -d $GDAL_PATH && \
+    rm ~/gdal-data.zip
+
+RUN wget -c http://demo.geo-solutions.it/share/github/imageio-ext/releases/1.1.X/1.1.12/native/gdal/linux/gdal192-Ubuntu12-gcc4.6.3-x86_64.tar.gz -O ~/gdal192.tar.gz && \
+    tar -zxvf ~/gdal192.tar.gz -C $GDAL_PATH && \
+    rm ~/gdal192.tar.gz
 
 #
 # GEOSERVER INSTALLATION
@@ -52,15 +60,6 @@ ENV GEOSERVER_VERSION 2.7.1.1
 RUN wget -c http://downloads.sourceforge.net/project/geoserver/GeoServer/$GEOSERVER_VERSION/geoserver-$GEOSERVER_VERSION-bin.zip -O ~/geoserver.zip &&\
     unzip ~/geoserver.zip -d /opt && mv -v /opt/geoserver* /opt/geoserver && \
     rm ~/geoserver.zip
-
-# Install GDAL
-RUN wget -c http://demo.geo-solutions.it/share/github/imageio-ext/releases/1.1.X/1.1.12/native/gdal/gdal-data.zip -O ~/gdal-data.zip && \
-    unzip ~/gdal-data.zip -d $GDAL_PATH && \
-    rm ~/gdal-data.zip
-
-RUN wget -c http://demo.geo-solutions.it/share/github/imageio-ext/releases/1.1.X/1.1.12/native/gdal/linux/gdal192-Ubuntu12-gcc4.6.3-x86_64.tar.gz -O ~/gdal192.tar.gz && \
-    tar -zxvf ~/gdal192.tar.gz -C $GDAL_PATH && \
-    rm ~/gdal192.tar.gz
 
 # Get OGR plugin
 RUN wget -c http://downloads.sourceforge.net/project/geoserver/GeoServer/$GEOSERVER_VERSION/extensions/geoserver-$GEOSERVER_VERSION-ogr-plugin.zip -O ~/geoserver-ogr-plugin.zip &&\
