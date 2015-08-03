@@ -4,8 +4,9 @@ GeoServer 2.7.1.1 on Oracle Java 7 with JAI 1.1.3, ImageIO 1.1, GDAL 1.9.2 and e
 * ogr
 * gdal
 * printing
+* importer
 
-Image size 704.2 Mb
+Image size 705 Mb
 
 Run geoserver
 ```
