@@ -54,7 +54,7 @@ RUN wget -c http://demo.geo-solutions.it/share/github/imageio-ext/releases/1.1.X
 #
 # GEOSERVER INSTALLATION
 #
-ENV GEOSERVER_VERSION 2.7.1.1
+ENV GEOSERVER_VERSION 2.7.2
 
 # Get GeoServer
 RUN wget -c http://downloads.sourceforge.net/project/geoserver/GeoServer/$GEOSERVER_VERSION/geoserver-$GEOSERVER_VERSION-bin.zip -O ~/geoserver.zip &&\
