@@ -5,6 +5,7 @@
 
 # What is GeoServer? #
 GeoServer is a Java-based software server that allows users to view and edit geospatial data. Using open standards set forth by the [Open Geospatial Consortium (OGC)](http://www.opengeospatial.org/), GeoServer allows for great flexibility in map creation and data sharing.
+![GeoServer_200.png](http://static.geoserver.org/images/GeoServer_200.png)
 
 Site: [geoserver.org](http://geoserver.org/) | Documentation: [docs.geoserver.org](http://docs.geoserver.org/) | Repository: [github](https://github.com/geoserver/geoserver)
 # Image description #
