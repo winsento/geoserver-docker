@@ -32,7 +32,7 @@ docker run -d winsent/geoserver
 Make geoserver data directory and run container
 ```
 #!sh
-mkdir -p ~/geoserver_data
+mkdir ~/geoserver_data
 docker run -d -p 8080:8080 -v ~/geoserver_data:/opt/geoserver/data_dir winsent/geoserver
 
 ```
