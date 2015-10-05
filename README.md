@@ -1,6 +1,7 @@
 # Supported tags and respective `Dockerfile` links #
 
 - `2.7.2`, `2.7`, `latest` ([2.7/Dockerfile](https://bitbucket.org/ololoteam/geoserver-docker/src/e68aae3d583f1706c2bbd737067ad4da76d0d9b5/2.7))
+- `2.8.0`, `2.8` ([2.8/Dockerfile](https://bitbucket.org/ololoteam/geoserver-docker/src/e68aae3d583f1706c2bbd737067ad4da76d0d9b5/2.8)) *Warning. Extensions are not available for download. Build filed.*
 
 # What is GeoServer? #
 GeoServer is a Java-based software server that allows users to view and edit geospatial data. Using open standards set forth by the [Open Geospatial Consortium (OGC)](http://www.opengeospatial.org/), GeoServer allows for great flexibility in map creation and data sharing.
