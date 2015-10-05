@@ -22,18 +22,16 @@ Is not official GeoServer image based on Oracle Java 7 with JAI 1.1.3, ImageIO 1
 # How to use this image #
 ## Start a GeoServer instance ##
 
-```
-#!sh
-docker run -d winsent/geoserver
+```console
+$ docker run -d winsent/geoserver
 
 ```
 
 ## Using a custom GeoServer data directory ##
 Make geoserver data directory and run container
-```
-#!sh
-mkdir ~/geoserver_data
-docker run -d -p 8080:8080 -v ~/geoserver_data:/opt/geoserver/data_dir winsent/geoserver
+```console
+$ mkdir ~/geoserver_data
+$ docker run -d -p 8080:8080 -v ~/geoserver_data:/opt/geoserver/data_dir winsent/geoserver
 
 ```
 
