@@ -12,7 +12,7 @@ GeoServer is a Java-based software server that allows users to view and edit geo
 wiki: [wikipedia.org](https://wikipedia.org/wiki/GeoServer) | site: [geoserver.org](http://geoserver.org/) | documentation: [docs.geoserver.org](http://docs.geoserver.org/) | repository: [github.com](https://github.com/geoserver/geoserver)
 # Image description #
 
-Is not official GeoServer image based on Oracle Java 7 with JAI 1.1.3, ImageIO 1.1, GDAL 1.9.2 and extensions:
+Is not official GeoServer image based on `Oracle Java 7` with `JAI 1.1.3`, `ImageIO 1.1`, `GDAL 1.10.1` and extensions:
 
 * ogr
 * gdal
