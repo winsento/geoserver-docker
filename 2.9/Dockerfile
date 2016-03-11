@@ -17,16 +17,16 @@ RUN dpkg-divert --local --rename --add /sbin/initctl
 RUN \
   apt-get -y update --fix-missing && \
   apt-get -y install unzip software-properties-common && \
-  echo oracle-java7-installer shared/accepted-oracle-license-v1-1 select true | debconf-set-selections && \
+  echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | debconf-set-selections && \
   add-apt-repository -y ppa:webupd8team/java && \
   apt-get -y update && \
-  apt-get install -y oracle-java7-installer gdal-bin libgdal-java && \
+  apt-get install -y oracle-java8-installer gdal-bin libgdal-java && \
   apt-get clean && \
   rm -rf /var/lib/apt/lists/* && \
-  rm -rf /var/cache/oracle-jdk7-installer && \
+  rm -rf /var/cache/oracle-jdk8-installer && \
   rm -rf /tmp/* /var/tmp/*
 
-ENV JAVA_HOME /usr/lib/jvm/java-7-oracle
+ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
 
 # Get native JAI and ImageIO
 RUN \
@@ -75,6 +75,11 @@ RUN wget -c http://downloads.sourceforge.net/project/geoserver/GeoServer/$GEOSER
 # Replace GDAL Java bindings
 RUN rm -rf $GEOSERVER_HOME/webapps/geoserver/WEB-INF/lib/imageio-ext-gdal-bindings-1.9.2.jar
 RUN cp /usr/share/java/gdal.jar $GEOSERVER_HOME/webapps/geoserver/WEB-INF/lib/gdal.jar
+
+# Remove old JAI from geoserver
+RUN rm -rf $GEOSERVER_HOME/webapps/geoserver/WEB-INF/lib/jai_codec-1.1.3.jar && \
+    rm -rf $GEOSERVER_HOME/webapps/geoserver/WEB-INF/lib/jai_core-1.1.3.jar && \
+    rm -rf $GEOSERVER_HOME/webapps/geoserver/WEB-INF/lib/jai_imageio-1.1.jar
 
 # Expose GeoServer's default port
 EXPOSE 8080
