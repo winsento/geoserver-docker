@@ -3,6 +3,7 @@
 - `2.6.5`, `2.6` ([2.6/Dockerfile](https://bitbucket.org/ololoteam/geoserver-docker/src/default/2.6))
 - `2.7.6`, `2.7`, `latest` ([2.7/Dockerfile](https://bitbucket.org/ololoteam/geoserver-docker/src/default/2.7))
 - `2.8.2`, `2.8` ([2.8/Dockerfile](https://bitbucket.org/ololoteam/geoserver-docker/src/default/2.8))
+- `2.9-beta`, `2.9` ([2.9/Dockerfile](https://bitbucket.org/ololoteam/geoserver-docker/src/default/2.9))
 
 # What is GeoServer? #
 GeoServer is a Java-based software server that allows users to view and edit geospatial data. Using open standards set forth by the [Open Geospatial Consortium (OGC)](http://www.opengeospatial.org/), GeoServer allows for great flexibility in map creation and data sharing.
@@ -12,7 +13,7 @@ GeoServer is a Java-based software server that allows users to view and edit geo
 wiki: [wikipedia.org](https://wikipedia.org/wiki/GeoServer) | site: [geoserver.org](http://geoserver.org/) | documentation: [docs.geoserver.org](http://docs.geoserver.org/) | repository: [github.com](https://github.com/geoserver/geoserver)
 # Image description #
 
-Is not official GeoServer image based on `Oracle Java 7` with `JAI 1.1.3`, `ImageIO 1.1`, `GDAL 1.10.1` and extensions:
+Is not official GeoServer image based on `Oracle Java` with `JAI 1.1.3`, `ImageIO 1.1`, `GDAL 1.10.1` and extensions:
 
 * ogr
 * gdal
