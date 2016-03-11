@@ -27,6 +27,7 @@ Is not official GeoServer image based on `Oracle Java` with `JAI 1.1.3`, `ImageI
 $ docker run -d winsent/geoserver
 
 ```
+You can test it by visiting http://container-ip:8080
 
 ## Using a custom GeoServer data directory ##
 Make geoserver data directory and run container
