@@ -34,8 +34,8 @@ You can test it by visiting http://container-ip:8080
 ## Using a custom GeoServer data directory ##
 Make geoserver data directory and run container
 ```console
-$ mkdir ~/geoserver_data
-$ docker run -d -p 8080:8080 -v ~/geoserver_data:/opt/geoserver/data_dir winsent/geoserver
+$ mkdir /data/geoserver_data
+$ docker run --name geoserver --restart=always -d -p 8080:8080 -v /data/geoserver_data:/opt/geoserver/data_dir winsent/geoserver
 
 ```
 
