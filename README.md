@@ -1,9 +1,9 @@
 # Supported tags and respective `Dockerfile` links #
 
-- `2.6.5`, `2.6` ([2.6/Dockerfile](https://bitbucket.org/ololoteam/geoserver-docker/src/default/2.6))
-- `2.7.6`, `2.7` ([2.7/Dockerfile](https://bitbucket.org/ololoteam/geoserver-docker/src/default/2.7))
-- `2.8.2`, `2.8`, `latest` ([2.8/Dockerfile](https://bitbucket.org/ololoteam/geoserver-docker/src/default/2.8))
-- `2.9-beta`, `2.9` ([2.9/Dockerfile](https://bitbucket.org/ololoteam/geoserver-docker/src/default/2.9))
+- [`2.6.5`, `2.6` (*2.6/Dockerfile*)](https://bitbucket.org/ololoteam/geoserver-docker/src/default/2.6)
+- [`2.7.6`, `2.7` (*2.7/Dockerfile*)](https://bitbucket.org/ololoteam/geoserver-docker/src/default/2.7)
+- [`2.8.2`, `2.8`, `latest` (*2.8/Dockerfile*)](https://bitbucket.org/ololoteam/geoserver-docker/src/default/2.8)
+- [`2.9-beta`, `2.9` (*2.9/Dockerfile*)](https://bitbucket.org/ololoteam/geoserver-docker/src/default/2.9)
 
 [![](https://badge.imagelayers.io/winsent/geoserver:latest.svg)](https://imagelayers.io/?images=winsent/geoserver:latest,winsent/geoserver:2.6,winsent%2Fgeoserver:2.7,winsent/geoserver:2.8,winsent/geoserver:2.9)
 
@@ -41,3 +41,9 @@ $ docker run -d -p 8080:8080 -v ~/geoserver_data:/opt/geoserver/data_dir winsent
 
 ## License ##
 GeoServer licensed under the [GPL](http://www.gnu.org/licenses/old-licenses/gpl-2.0.html).
+
+# User Feedback
+
+## Issues
+
+If you have any problems or questions about this image, please contact me through a [Bitbucket issue](https://bitbucket.org/ololoteam/geoserver-docker/issues) or email [pipetc@gmail.com](mailto:pipetc@gmail.com).
