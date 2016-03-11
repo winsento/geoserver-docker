@@ -5,6 +5,8 @@
 - `2.8.2`, `2.8`, `latest` ([2.8/Dockerfile](https://bitbucket.org/ololoteam/geoserver-docker/src/default/2.8))
 - `2.9-beta`, `2.9` ([2.9/Dockerfile](https://bitbucket.org/ololoteam/geoserver-docker/src/default/2.9))
 
+[![](https://badge.imagelayers.io/winsent/geoserver:latest.svg)](https://imagelayers.io/?images=winsent/geoserver:latest,winsent/geoserver:2.6,winsent%2Fgeoserver:2.7,winsent/geoserver:2.8,winsent/geoserver:2.9)
+
 # What is GeoServer? #
 GeoServer is a Java-based software server that allows users to view and edit geospatial data. Using open standards set forth by the [Open Geospatial Consortium (OGC)](http://www.opengeospatial.org/), GeoServer allows for great flexibility in map creation and data sharing.
 
