@@ -42,9 +42,17 @@ $ docker run --name geoserver --restart=always -d -p 8080:8080 -v /data/geoserve
 ## License ##
 GeoServer licensed under the [GPL](http://www.gnu.org/licenses/old-licenses/gpl-2.0.html).
 
+# Other GIS containers
+
+* Geoserver on Alpine Linux ([link](https://hub.docker.com/r/winsent/geoserver-alpine/))
+* OSM tools ([link](https://hub.docker.com/r/cartography/osmtools/))
+* Nominatim ([link](https://hub.docker.com/r/cartography/nominatim-docker/))
+* OSRM backend ([link](https://hub.docker.com/r/cartography/osrm-backend-docker/))
+* OSRM frontend ([link](https://hub.docker.com/r/cartography/osrm-frontend-docker/))
+
+
 # User Feedback
 
 ## Issues
 
 If you have any problems or questions about this image, please contact me through a [Bitbucket issue](https://bitbucket.org/ololoteam/geoserver-docker/issues) or email [pipetc@gmail.com](mailto:pipetc@gmail.com).
-
