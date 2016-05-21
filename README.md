@@ -45,7 +45,6 @@ GeoServer licensed under the [GPL](http://www.gnu.org/licenses/old-licenses/gpl-
 
 # Other GIS containers
 
-* Geoserver on Alpine Linux ([link](https://hub.docker.com/r/winsent/geoserver-alpine/))
 * OSM tools ([link](https://hub.docker.com/r/cartography/osmtools/))
 * Nominatim ([link](https://hub.docker.com/r/cartography/nominatim-docker/))
 * OSRM backend ([link](https://hub.docker.com/r/cartography/osrm-backend-docker/))
