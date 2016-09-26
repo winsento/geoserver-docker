@@ -1,7 +1,7 @@
 FROM anapsix/alpine-java:jdk7
 MAINTAINER winsent <pipetc@gmail.com>
 
-ENV GEOSERVER_VERSION 2.8.3
+ENV GEOSERVER_VERSION 2.8.5
 ENV GDAL_VERSION 1.11.4
 ENV ANT_VERSION 1.9.7
 ENV LD_LIBRARY_PATH /usr/local/lib/
