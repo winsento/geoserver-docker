@@ -45,7 +45,7 @@ RUN \
 #
 # GEOSERVER INSTALLATION
 #
-ENV GEOSERVER_VERSION 2.10-beta
+ENV GEOSERVER_VERSION 2.10.0
 
 # Get GeoServer
 RUN wget -c http://downloads.sourceforge.net/project/geoserver/GeoServer/$GEOSERVER_VERSION/geoserver-$GEOSERVER_VERSION-bin.zip -O ~/geoserver.zip &&\
