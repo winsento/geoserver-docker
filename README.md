@@ -5,7 +5,7 @@
 - [`2.8.5`, `2.8`, `latest` (*2.8/Dockerfile*)](https://bitbucket.org/ololoteam/geoserver-docker/src/default/2.8)
 - [`2.8.5-alpine`, `2.8-alpine`, `alpine` (*2.8/alpine/Dockerfile*)](https://bitbucket.org/ololoteam/geoserver-docker/src/default/2.8/alpine)
 - [`2.9.2`, `2.9` (*2.9/Dockerfile*)](https://bitbucket.org/ololoteam/geoserver-docker/src/default/2.9)
-- [`2.10.0`, `2.10` (*2.10/Dockerfile*)](https://bitbucket.org/ololoteam/geoserver-docker/src/default/2.10)
+- [`2.10.1`, `2.10` (*2.10/Dockerfile*)](https://bitbucket.org/ololoteam/geoserver-docker/src/default/2.10)
 
 [![](https://badge.imagelayers.io/winsent/geoserver:latest.svg)](https://imagelayers.io/?images=winsent/geoserver:latest,winsent/geoserver:2.6,winsent%2Fgeoserver:2.7,winsent/geoserver:2.8,winsent/geoserver:2.9,winsent/geoserver:2.10)
 
