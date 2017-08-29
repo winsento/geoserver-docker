@@ -8,7 +8,7 @@
 - [`2.10.1`, `2.10` (*2.10/Dockerfile*)](https://bitbucket.org/ololoteam/geoserver-docker/src/default/2.10)
 - [`2.11.2`, `2.11` (*2.11/Dockerfile*)](https://bitbucket.org/ololoteam/geoserver-docker/src/default/2.11)
 
-# Experemental
+# Experimental
 Geoserver with ERDAS ECW/JP2 v.5 (read-only) support and GDAL 2.2.1
 
 - [`2.11.2-ecw`, `2.11-ecw` (*2.11/ecw-sdk/Dockerfile*)](https://bitbucket.org/ololoteam/geoserver-docker/src/default/2.11/ecw-sdk)
