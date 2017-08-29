@@ -9,11 +9,11 @@
 - [`2.11.2`, `2.11` (*2.11/Dockerfile*)](https://bitbucket.org/ololoteam/geoserver-docker/src/default/2.11)
 
 # Experemental
-Geoserver with ERDAS ECW/JP2 v.5 (read-only, 500Mb limit) support and GDAL 2.2.1
+Geoserver with ERDAS ECW/JP2 v.5 (read-only) support and GDAL 2.2.1
 
 - [`2.11.2-ecw`, `2.11-ecw` (*2.11/ecw-sdk/Dockerfile*)](https://bitbucket.org/ololoteam/geoserver-docker/src/default/2.11/ecw-sdk)
 
-Geoserver with ECW 3.3 SDK (read-write, no 500Mb limit) support and GDAL 2.2.1
+Geoserver with ECW 3.3 SDK (read-write) support and GDAL 2.2.1
 
 - [`2.11.2-libecw`, `2.11-libecw` (*2.11/ecw-sdk/Dockerfile*)](https://bitbucket.org/ololoteam/geoserver-docker/src/default/2.11/libecw)
 
