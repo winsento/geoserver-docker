@@ -105,6 +105,11 @@ RUN wget -c http://downloads.sourceforge.net/project/geoserver/GeoServer/$GEOSER
     unzip -o ~/geoserver-importer-plugin.zip -d $GEOSERVER_HOME/webapps/geoserver/WEB-INF/lib/ && \
     rm ~/geoserver-importer-plugin.zip
 
+# Get vector tiles plugin
+RUN wget -c http://downloads.sourceforge.net/project/geoserver/GeoServer/$GEOSERVER_VERSION/extensions/geoserver-$GEOSERVER_VERSION-vectortiles-plugin.zip -O ~/geoserver-vectortiles-plugin.zip && \
+    unzip -o ~/geoserver-vectortiles-plugin.zip -d $GEOSERVER_HOME/webapps/geoserver/WEB-INF/lib/ && \
+    rm ~/geoserver-vectortiles-plugin.zip
+
 # Replace GDAL Java bindings
 RUN rm -rf $GEOSERVER_HOME/webapps/geoserver/WEB-INF/lib/imageio-ext-gdal-bindings-1.9.2.jar
 RUN cp /usr/share/gdal.jar $GEOSERVER_HOME/webapps/geoserver/WEB-INF/lib/gdal.jar
