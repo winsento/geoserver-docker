@@ -54,6 +54,27 @@ $ docker run --name geoserver --restart=always -d -p 8080:8080 -v /data/geoserve
 
 ```
 
+## JAVA_OPT ##
+You can set JAVA_OPTS as docker env
+- http://geoserver.geo-solutions.it/edu/en/adv_gsconfig/gsproduction.html
+- http://docs.geoserver.org/stable/en/user/production/container.html
+```
+JAVA_OPTS="$JAVA_OPTS -Xmx1536M -XX:MaxPermSize=756M"
+JAVA_OPTS="$JAVA_OPTS -Djava.awt.headless=true -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled"
+
+docker run \
+--name geoserver \
+--restart=always \
+-d \
+-e JAVA_OPTS="$JAVA_OPTS" \
+-p 8080:8080 \
+-v /data/geoserver_data:/opt/geoserver/data_dir \
+winsent/geoserver
+```
+For example
+
+
+
 ## License ##
 GeoServer licensed under the [GPL](http://www.gnu.org/licenses/old-licenses/gpl-2.0.html).
 
