@@ -57,6 +57,9 @@ RUN apt-get -y update && apt-get -y install libproj-dev libjpeg-dev g++ make swi
     apt-get purge -y g++ make swig ant && \
     rm -rf /tmp/*
 
+# Configure Geoserver
+    RUN mv $GEOSERVER_HOME/data_dir/security/masterpw.info $GEOSERVER_HOME/data_dir/security/masterpw.info.secret
+
 ENV LD_LIBRARY_PATH $LD_LIBRARY_PATH:/usr/local/lib
 
 # Get native JAI and ImageIO
@@ -119,6 +122,9 @@ RUN rm -rf $GEOSERVER_HOME/webapps/geoserver/WEB-INF/lib/jai_codec-1.1.3.jar && 
 
 # Enable JAI-EXT
 RUN sed -i '/-jar start.jar/ s/$/-Dorg.geotools.coverage.jaiext.enabled=true/' /opt/geoserver/bin/startup.sh
+
+# Set default locale
+ENV LANG C.UTF-8
 
 # Expose GeoServer's default port
 EXPOSE 8080
